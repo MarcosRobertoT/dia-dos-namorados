@@ -1,0 +1,36 @@
+html, body{
+    margin: 0%;
+    background-color:  rgb(165, 92, 2);
+    color: rgb(252, 234, 213);
+    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Helvetica, Arial, sans-serif; 
+}
+.titulo, .opcoes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.opcoes{
+    gap: 30px;
+    font-size: 5em;
+}
+#separacao{
+    width: auto;
+    border: solid black 3px;
+}
+.pontuacoes, .botoes{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.placar{
+    display: flex;
+}
+button{
+    color: white;
+    background-color: black;
+    padding: 20px;
+    border-radius: 50px;
+}
+#opcoesM{
+    display: none;
+}

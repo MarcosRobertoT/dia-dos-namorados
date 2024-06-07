@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/21.css">
+    <script src="../js/21.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>21 de cria</title>
+</head>
+<body>
+    <div class="titulo">
+        <h2>Vinte um de cria</h2>
+    </div>
+    <div class="mCartas">
+        <div class="fundo">
+            <p id="n1">?</p>
+        </div>
+        <div class="fundo">
+            <p id="n2">?</p>    
+        </div>
+    </div>
+    <div class="valorM">
+        <h1>Máquina:</h1>
+        <h1 id="valorM">0</h1>
+    </div>
+    <div class="juControle">
+        <div class="parte">
+            <h1>Valor:</h1>
+            <h1 id="valor">0</h1>
+        </div>
+        <div class="parte" id="botoes">
+            <button onclick="comprar()" id="comprar">Comprar</button>
+            <button onclick="parar()" id="parar">Parar</button>
+            <button onclick="jogarNovamente()" id="novamente" hidden>Jogar novamente</button>
+        </div>
+    </div>
+    <div class="placar">
+        <div class="placar">
+            <h1>Juju:</h1>
+            <h1 id="placar">0</h1>
+        </div>
+        <div class="placar">
+            <h1>Máquina:</h1>
+            <h1 id="placarM">0</h1>
+        </div>
+    </div>
+    <div class="botoes">
+        <button onclick="retornar()">Retornar</button>
+        <button onclick="finalizar()">Finalizar</button>
+    </div>
+</body>
+</html>

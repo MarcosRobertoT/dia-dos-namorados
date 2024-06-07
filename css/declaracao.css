@@ -1,0 +1,63 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.particoes{
+    opacity: 0;
+    filter: blur(15px);
+    transform: translateX(-100%);
+    transition: all 1.5s;
+}
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0%);
+    transition: all 1.5s;
+}
+body{
+    background-color: black;
+    color: white;
+}
+h1, h2 {
+    text-align: center;
+    font-size: 2em;
+}
+p{
+    text-align: center;
+    font-size: 1.5em;
+}
+section {
+    display: grid;
+    min-height: 100vh;
+    place-items: center;
+    align-items: center;
+}
+section img {
+    width: 300px;
+    border-radius: 20px;
+}
+.imgs .particoes{
+    margin: 30px;
+}
+.imgs:nth-child(2){
+    transition-delay: 300ms;
+}
+.imgs:nth-child(3){
+    transition-delay: 600ms;
+}
+.imgs:nth-child(4){
+    transition-delay: 900ms;
+}
+.imgs:nth-child(5){
+    transition-delay: 1200ms;
+}
+.imgs:nth-child(6){
+    transition-delay: 1500ms;
+}
+button {
+    color: black;
+    background-color: white;
+    padding: 20px;
+    border-radius: 50px;
+}

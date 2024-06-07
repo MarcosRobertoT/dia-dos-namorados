@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/joquempo.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../js/joquempo.js" defer></script>
+    <title>Pedra, papel ou tesoura</title>
+</head>
+<body>
+    <div class="titulo">
+        <h2>Pedra, papel ou tesoura</h2>
+    </div>
+    <div class="opcoes">
+        <p onclick="jogar(0)">👊</p>
+        <p onclick="jogar(1)">✋</p>
+        <p onclick="jogar(2)">✌️</p>
+    </div>
+
+    <div id="separacao"></div>
+
+    <div class="opcoes" id="opcoesM" hidden>
+        <p id="pedra" hidden>👊</p>
+        <p id="papel" hidden>✋</p>
+        <p id="tesoura" hidden>✌️</p>
+    </div>
+    <div class="pontuacoes">
+        <div class="placar">
+            <h1 >Julia:</h1>
+            <h1 id="ju">0</h1>
+        </div>
+        <div class="placar">
+            <h1>Máquina:</h1>
+            <h1 id="ma">0</h1>
+        </div>
+    </div>
+    <div class="botoes">
+        <button onclick="retornar()">Retornar</button>
+        <button onclick="finalizar()">Finalizar</button>
+    </div>
+</body>
+</html>

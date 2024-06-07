@@ -1,0 +1,65 @@
+body,html{
+    margin: 0%;
+    padding: 0%;
+}
+@keyframes pulse {
+    0%, 10%{transform: scale(1);}
+    50%{ transform: scale(1.2);}
+}
+body{
+    background-image: url(../img/fundo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0%;
+    background-color: rgba(0, 0, 0, 0.671);
+    padding: 10px;
+}
+.blocos:hover {animation: pulse 1.5s infinite;}
+header img {
+    width: 15%;
+}
+header h1{
+    padding-left: 5px;
+    margin: 0%;
+    color: white;
+}
+.container{
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    align-items: center;
+}
+.blocos li{
+    padding-bottom: 30px;
+}
+.blocos{
+    font-size: 1.1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    width: 70%;
+    border-radius: 15px;
+    padding: 5px 20px 5px 30px;
+}
+#bloco2, #bloco4{
+    background-color: blueviolet;
+}
+#bloco4{
+    margin-bottom: 20px;
+}
+#bloco1, #bloco3{
+    background-color: rgb(165, 92, 2);
+}
+body h1{
+    text-align: center;
+}
+h2{
+    text-align: center;
+}

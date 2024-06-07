@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../js/fotos.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="../css/fotos.css">
+    <title>Jogo das Fotos</title>
+</head>
+<body>
+    <header>
+        <p>❤️</p>
+    </header>
+    <section class="partes" id="p1">
+        <h1 class="particao">Jogo das fotos (Clique na imagem em que só aparece você, vulgo mulher mais linda do mundo)</h1>
+        <div class="particao">
+            <img src="../img/jogoFotos/img1.jpg" alt="" onclick="errou()">
+            <img src="../img/jogoFotos/img2.jpg" alt="" onclick="errou()">
+        </div>
+        <div class="particao">
+            <img src="../img/jogoFotos/s1.jpg" alt="" onclick="acertou()">
+            <img src="../img/jogoFotos/img3.jpg" alt="" onclick="errou()">
+        </div>
+    </section>
+    <section class="partes" id="p2">
+        <div class="particao">
+            <img src="../img/jogoFotos/img4.jpg" alt="" onclick="errou()">
+            <img src="../img/jogoFotos/s2.jpg" alt="" onclick="acertou()">
+        </div>
+        <div class="particao">
+            <img src="../img/jogoFotos/img5.jpg" alt="" onclick="errou()">
+            <img src="../img/jogoFotos/img6.jpg" alt="" onclick="errou()">
+        </div>
+    </section>
+    <section class="partes" id="p3">
+        <div class="particao">
+            <img src="../img/jogoFotos/s3.jpg" alt="" onclick="acertou()">
+            <img src="../img/jogoFotos/img7.jpg" alt="" onclick="errou()">
+        </div>
+        <div class="particao">
+            <img src="../img/jogoFotos/img8.jpg" alt="" onclick="errou()">
+            <img src="../img/jogoFotos/img9.jpg" alt="" onclick="errou()">
+        </div>
+    </section>
+    <section class="partes" id="p4">
+        <div class="particao">
+            <img src="../img/jogoFotos/img10.jpg" alt="" onclick="errou()">
+            <img src="../img/jogoFotos/img11.jpg" alt="" onclick="errou()">
+        </div>
+        <div class="particao">
+            <img src="../img/jogoFotos/img12.jpg" alt="" onclick="errou()">
+            <img src="../img/jogoFotos/s4.jpg" alt="" onclick="acertou()">
+        </div>
+    </section>
+    <div id="certificadoD">
+        <p>Por todo o seu esforço nesse desafio super difícil, eu te presenteio com:</p>
+        <img src="../img/certificado.jpg" alt="" id="certificado">
+    </div>
+    <button hidden onclick="premio()">Pegar Prêmio</button>
+</body>
+</html>
