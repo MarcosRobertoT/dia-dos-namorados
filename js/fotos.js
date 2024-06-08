@@ -23,6 +23,7 @@ function atualiza(){
     secoes.forEach((entry)=>{
         if(secao < 5){
             if(entry.id == (`p${secao}`)){
+                document.querySelector("h1").setAttribute("hidden", "")
                 entry.classList.add("aparecer")
                 Swal.fire("Acertou!! bora para a próxima");
             } else{
@@ -43,6 +44,12 @@ function errou(){
 
 function premio(){
     download()("certificado")
+    document.querySelector("button").setAttribute("disabled", "")
+    document.getElementById("voltar").removeAttribute("hidden")
+}
+
+function voltar(){
+    window.location.href = "../index.html";
 }
 
 function acertou(){

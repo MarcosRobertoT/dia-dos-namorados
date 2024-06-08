@@ -11,8 +11,9 @@ body{
     flex-direction: column;
     justify-content: center;
     min-height: 100vh;
+    gap: 30px;
 }
-header{
+#coracao{
     text-align: center;
     font-size: 2em;
 }
